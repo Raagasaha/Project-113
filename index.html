@@ -1,0 +1,82 @@
+<html>
+
+<head>
+  
+  <meta charset="UTF-8">
+  <title>Picture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+<span>
+  <style type="text/css">
+   
+  h3
+  {
+    font-size: 25px !important;
+  }
+  #mycanvas {
+  	border:20px  pink;
+  border-style: ridge;
+  width:660px;
+  height:500px;
+
+  
+  }
+  body {
+    text-align: center;
+    align-items: center;
+    background-color: orangered;
+}
+#heading{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+}
+#inputText{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+}
+  </style>
+
+</head>
+
+<body>
+  <center>
+<div class="container">
+  <b>
+	<h1 id="heading">PICTURES w/ Filters!</h1>
+</b>
+	<hr>
+  <hr>
+  <label id="inputText">Filter Color: </label>
+  <input id="color_name" placeholder="Enter the Filter Color">
+  <br><br>
+  <button onclick="filter_tint()" class="btn btn-info">Apply Filter</button>
+  <br>
+  <br>
+  <button onclick="take_snapshot()" class="btn btn-success">Take Snapshot</button>
+</div>
+<canvas id="mycanvas"></canvas>
+<br>
+<br>
+<br>
+<span>
+  
+<img src="selfie.jpeg" height="300" width="300" id="pic1"></span>
+<img src="selfie2.jpeg" height="300" width="300" id="pic2"></span>
+<img src="selfie3.png" height="300" width="300" id="pic3"></span>
+<img src="selfie4.webp" height="300" width="300" id="pic4"></span>
+<img src="selfie5.jpeg" height="300" width="300" id="pic5"></span>
+<img src="selfie6.png" height="300" width="300" id="pic6"></span>
+</span>
+
+</center>
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
+
